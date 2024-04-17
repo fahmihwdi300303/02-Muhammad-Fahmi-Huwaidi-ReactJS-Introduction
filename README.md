@@ -52,3 +52,21 @@ Contoh perubahan.
 2. **Webpack Steps In:** Webpack then reloads your main application file (root.jsx).
 3. **Cache Cleanup:** As it reloads root.jsx, Webpack also clears the cache for any files that depended on the changed file. This cleanup continues through "parent" files (files that used the changed file) and even "grandparent" files (files that used the parent files).
 4. **The Root of It All:** This chain reaction stops at your main application file (root.jsx). This ensures all related files get reloaded when you make changes.
+
+### Jawaban Soal 4
+
+Bukti setup environment telah berhasil di  komputer.
+
+![Screenshot](assets-report/08.png)
+
+### Jawaban Soal 5
+
+Bukti setup environment telah berhasil di  komputer.
+
+![Screenshot](assets-report/09.png)
+
+### Jawaban Soal 6
+
+Bukti setup environment telah berhasil di  komputer.
+
+![Screenshot](assets-report/10.png)
