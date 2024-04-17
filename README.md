@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Laporan Praktikum
 
-## Getting Started
+|  | Pemrograman Berbasis Framework 2024 |
+|--|--|
+| NIM |  2141720153|
+| Nama |  Muhammad Fahmi Huwaidi |
+| Kelas | TI - 3I |
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Jawaban Soal 1
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Bukti setup environment telah berhasil di  komputer.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![Screenshot](assets-report/01.png)
+![Screenshot](assets-report/02.png)
+![Screenshot](assets-report/03.png)
+![Screenshot](assets-report/04.png)
+![Screenshot](assets-report/05.png)
+<br />
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Jawaban Soal 2
 
-## Learn More
+Here's a paraphrase of the text:
 
-To learn more about Next.js, take a look at the following resources:
+**Behind the Scenes of Your Project**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This explains what different folders and files do in a project, like a behind-the-scenes guide. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+* **Project History (.git):** This hidden folder keeps track of all changes made to the project over time. 
+* **External Building Blocks (node_modules):** This folder stores pre-built code from others that your project uses to function.
+* **Public Showcase (public):** This folder contains files like images and HTML that people can see when they visit your project on the web.
+* **Project Core (src):** This folder holds the main code you wrote to make your project work. It might have subfolders for different parts of the project.
+* **Code Checkup Tool (.eslintrc.json):** This file helps find errors or areas to improve your code.
+* **Ignored Files (.gitignore):** This file tells Git to ignore certain files, like temporary build files or secret information, so they don't get saved in project history.
+* **Next.js Configuration (next.config.mjs):** This file lets you adjust settings for a framework called Next.js if you're using it for your project.
+* **TypeScript Definitions (next-env.d.ts):** This file helps TypeScript understand code from other sources.
+* **Project Details (package.json):** This file contains information about your project, like its name, version, and required code from others.
+* **Dependency Lock (package-lock.json):** This file helps make sure everyone using the project gets the exact same external code.
+* **CSS Processing Setup (postcss.config.js):** This file controls how a tool transforms your CSS code.
+* **Project Instructions (README.md):** This file is like a manual for your project, explaining how to use it or get started.
+* **Tailwind CSS Customization (tailwind.config.js):** This file lets you change how a CSS framework called Tailwind CSS works in your project.
+* **TypeScript Configuration (tsconfig.json):** This file tells TypeScript how to compile your code. 
 
-## Deploy on Vercel
+### Jawaban Soal 3
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Bukti setup environment telah berhasil di  komputer.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Screenshot](assets-report/06.png)
+
+Contoh perubahan.
+1. **Change a File:**  When you modify a file, it gets removed from the temporary storage used by the front-end (build cache).
+2. **Webpack Steps In:** Webpack then reloads your main application file (root.jsx).
+3. **Cache Cleanup:** As it reloads root.jsx, Webpack also clears the cache for any files that depended on the changed file. This cleanup continues through "parent" files (files that used the changed file) and even "grandparent" files (files that used the parent files).
+4. **The Root of It All:** This chain reaction stops at your main application file (root.jsx). This ensures all related files get reloaded when you make changes.
